@@ -22,3 +22,8 @@ A simple script to fix intermittent Logitech Options+ issues where your mouse sp
 - Windows computer with Logitech Options+ installed.
 - Default installation path: `C:\Program Files\LogiOptionsPlus\LogiOptionsPlus.exe`
   - If your installation path is different, edit the `.bat` file to point to your actual `LogiOptionsPlus.exe`.
+
+## Why it works
+Sometimes Logitech Options+ fails to load the proper mouse speed settings because one of its helper processes (`logioptionsplus_agent.exe`, `logioptionsplus_appbroker.exe`, or `logioptionsplus_updater.exe`) gets stuck or doesn’t start correctly.  
+
+This script kills those three processes and restarts the main Options+ application, forcing it to load your saved mouse settings correctly.
